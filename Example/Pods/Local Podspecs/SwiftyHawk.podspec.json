@@ -1,0 +1,22 @@
+{
+  "name": "SwiftyHawk",
+  "version": "0.1.0",
+  "summary": "A short description of SwiftyHawk.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mmgrt/SwiftyHawk",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mmgrt": "mohamed.alghzawi@hungerstation.com"
+  },
+  "source": {
+    "git": "https://github.com/mmgrt/SwiftyHawk.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SwiftyHawk/Classes/**/*"
+}

@@ -1,0 +1,16 @@
+PODS:
+  - SwiftyHawk (0.1.0)
+
+DEPENDENCIES:
+  - SwiftyHawk (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftyHawk:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftyHawk: f527dd25f4bdf7a19be0d841a99962d61a2bf980
+
+PODFILE CHECKSUM: 402cfb18d42b4c8225e62d1fdebcb3d99c489b09
+
+COCOAPODS: 1.5.3

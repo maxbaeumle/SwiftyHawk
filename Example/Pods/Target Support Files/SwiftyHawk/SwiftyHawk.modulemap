@@ -1,0 +1,6 @@
+framework module SwiftyHawk {
+  umbrella header "SwiftyHawk-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwiftyHawk_Example' do
+  pod 'SwiftyHawk', :path => '../'
+
+  target 'SwiftyHawk_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
