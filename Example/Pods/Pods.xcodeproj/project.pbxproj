@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		2002CC42D0B9EDFE173C64323BE66B7B /* SwiftyHawk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D513CA43B8C975106F3725B46294FE /* SwiftyHawk-dummy.m */; };
 		4661D6C66F92346FD0B2E161674DB690 /* Pods-SwiftyHawk_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06FBF3E4BE42C36035E568CF44707EC3 /* Pods-SwiftyHawk_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		64CB7EB5BB99EDF245B30C5EDDA039E4 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EEE097FFA997B3628786D7491187C7 /* ReplaceMe.swift */; };
 		6A9B45999F898EDAB300B739412EDBF4 /* Pods-SwiftyHawk_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E486690FCB6280B83F5B22FCB4C21B21 /* Pods-SwiftyHawk_Example-dummy.m */; };
 		91E09D1073D29063FB798BB19D28FCFB /* SwiftyHawk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D8D35DD1EAE8B95276734357A55CDF /* SwiftyHawk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA05A01821E4EEF7004EE43A /* HawkAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA05A01521E4EEF7004EE43A /* HawkAlgorithm.swift */; };
+		AA05A01921E4EEF7004EE43A /* HawkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA05A01621E4EEF7004EE43A /* HawkClient.swift */; };
+		AA05A01A21E4EEF7004EE43A /* HawkCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA05A01721E4EEF7004EE43A /* HawkCredentials.swift */; };
 		AB695DADDCE754C8697D354382749C65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		BE4323ED19416233CDA6615722F39867 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		E1C930BAF05A51621215186C9F84E9E1 /* Pods-SwiftyHawk_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 469F1F381AA1248D1B8F1C64685A56B7 /* Pods-SwiftyHawk_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,26 +42,29 @@
 		06FBF3E4BE42C36035E568CF44707EC3 /* Pods-SwiftyHawk_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftyHawk_Tests-umbrella.h"; sourceTree = "<group>"; };
 		080EB4CE3EEE11B27D3083D8A226D909 /* Pods-SwiftyHawk_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftyHawk_Tests.modulemap"; sourceTree = "<group>"; };
 		0A8DE349FA64ECC064BF2F4CF7208EAB /* Pods-SwiftyHawk_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyHawk_Example-resources.sh"; sourceTree = "<group>"; };
-		1D4373016A4C7F3BD9ADBABF81B7E90B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1D4373016A4C7F3BD9ADBABF81B7E90B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		21E538FCAFBD25EF641F55D320B2F6A9 /* Pods-SwiftyHawk_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftyHawk_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		237A064639CE8ACA2AEA9642E2DC8B1B /* Pods-SwiftyHawk_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyHawk_Example-frameworks.sh"; sourceTree = "<group>"; };
-		301E4CCC7AD638BD92C4605991564809 /* Pods_SwiftyHawk_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftyHawk_Example.framework; path = "Pods-SwiftyHawk_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		301E4CCC7AD638BD92C4605991564809 /* Pods_SwiftyHawk_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyHawk_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		367E1E56FD653FA1425C1A8BDE0D5B1F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44FD068A437A8D9720288B06710D4452 /* Pods-SwiftyHawk_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyHawk_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		469F1F381AA1248D1B8F1C64685A56B7 /* Pods-SwiftyHawk_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftyHawk_Example-umbrella.h"; sourceTree = "<group>"; };
 		4AD8BBE31A64B11DC6556DFC760D335F /* SwiftyHawk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyHawk.modulemap; sourceTree = "<group>"; };
 		4EBE25C7CA9F521421EFAC7B28C4B5C3 /* Pods-SwiftyHawk_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftyHawk_Example.modulemap"; sourceTree = "<group>"; };
-		574BD0BF446F667002C26593FB376F2A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		574BD0BF446F667002C26593FB376F2A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		62A667B1AA733CD82E6173C22872027E /* Pods-SwiftyHawk_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyHawk_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6A553B2B6D6D78F195B831EADAAAAAF9 /* SwiftyHawk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyHawk.framework; path = SwiftyHawk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A553B2B6D6D78F195B831EADAAAAAF9 /* SwiftyHawk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyHawk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555B513CBB2B542A5932C7E5FDF8E13 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75D513CA43B8C975106F3725B46294FE /* SwiftyHawk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyHawk-dummy.m"; sourceTree = "<group>"; };
 		75F5F92D4488F12D108324FADA4B9D1E /* Pods-SwiftyHawk_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyHawk_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7F2BFC3E8609DA4BE90A877446BE2C7C /* Pods-SwiftyHawk_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftyHawk_Tests-dummy.m"; sourceTree = "<group>"; };
-		83AAA89963D38192C3BE51442D723B2B /* SwiftyHawk.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SwiftyHawk.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		83AAA89963D38192C3BE51442D723B2B /* SwiftyHawk.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = SwiftyHawk.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		915961505E08A5494B18DA8BEF98110F /* Pods-SwiftyHawk_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftyHawk_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B9716D00585E96F5EB0941097FA17C5 /* SwiftyHawk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyHawk.xcconfig; sourceTree = "<group>"; };
+		AA05A01521E4EEF7004EE43A /* HawkAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HawkAlgorithm.swift; path = SwiftyHawk/Classes/HawkAlgorithm.swift; sourceTree = "<group>"; };
+		AA05A01621E4EEF7004EE43A /* HawkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HawkClient.swift; path = SwiftyHawk/Classes/HawkClient.swift; sourceTree = "<group>"; };
+		AA05A01721E4EEF7004EE43A /* HawkCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HawkCredentials.swift; path = SwiftyHawk/Classes/HawkCredentials.swift; sourceTree = "<group>"; };
 		B6D8D35DD1EAE8B95276734357A55CDF /* SwiftyHawk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyHawk-umbrella.h"; sourceTree = "<group>"; };
 		B91C80F8888CFE55DF43D607383A2270 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE1FD8CC65306ACD4D57EFF009F0C0B8 /* SwiftyHawk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyHawk-prefix.pch"; sourceTree = "<group>"; };
@@ -68,9 +73,8 @@
 		D6EB69A7E3CE09A1D30F0651BB6B483B /* Pods-SwiftyHawk_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftyHawk_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DBC1FE9C5B05F8F81F8FFC222ED83C95 /* Pods-SwiftyHawk_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyHawk_Tests-resources.sh"; sourceTree = "<group>"; };
 		E019025BBC460E530B293DAA752DEF7B /* Pods-SwiftyHawk_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftyHawk_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E3EEE097FFA997B3628786D7491187C7 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SwiftyHawk/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		E486690FCB6280B83F5B22FCB4C21B21 /* Pods-SwiftyHawk_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftyHawk_Example-dummy.m"; sourceTree = "<group>"; };
-		EFB1F21EF9E915AADC4AECDA643D4B5D /* Pods_SwiftyHawk_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftyHawk_Tests.framework; path = "Pods-SwiftyHawk_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB1F21EF9E915AADC4AECDA643D4B5D /* Pods_SwiftyHawk_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyHawk_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACA407238E708517E53731EEC738138 /* Pods-SwiftyHawk_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyHawk_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,7 +168,9 @@
 		83727804CB5FE86711A5F3E379AF1DF1 /* SwiftyHawk */ = {
 			isa = PBXGroup;
 			children = (
-				E3EEE097FFA997B3628786D7491187C7 /* ReplaceMe.swift */,
+				AA05A01521E4EEF7004EE43A /* HawkAlgorithm.swift */,
+				AA05A01621E4EEF7004EE43A /* HawkClient.swift */,
+				AA05A01721E4EEF7004EE43A /* HawkCredentials.swift */,
 				EC433CD0D49C6B0F708475A93207A909 /* Pod */,
 				62890C4786994B52B4339E0B99729423 /* Support Files */,
 			);
@@ -321,6 +327,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					0023C717428426982077DA6C33A7DFC9 = {
+						LastSwiftMigration = 1010;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -378,7 +389,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64CB7EB5BB99EDF245B30C5EDDA039E4 /* ReplaceMe.swift in Sources */,
 				2002CC42D0B9EDFE173C64323BE66B7B /* SwiftyHawk-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +397,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA05A01921E4EEF7004EE43A /* HawkClient.swift in Sources */,
+				AA05A01A21E4EEF7004EE43A /* HawkCredentials.swift in Sources */,
+				AA05A01821E4EEF7004EE43A /* HawkAlgorithm.swift in Sources */,
 				6A9B45999F898EDAB300B739412EDBF4 /* Pods-SwiftyHawk_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +459,7 @@
 			baseConfigurationReference = FACA407238E708517E53731EEC738138 /* Pods-SwiftyHawk_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -468,6 +482,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -595,8 +611,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -671,6 +686,7 @@
 			baseConfigurationReference = 75F5F92D4488F12D108324FADA4B9D1E /* Pods-SwiftyHawk_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -693,6 +709,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
