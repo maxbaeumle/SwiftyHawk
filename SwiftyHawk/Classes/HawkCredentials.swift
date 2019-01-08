@@ -1,6 +1,6 @@
 //
 //  HawkCredentials.swift
-//  Pods-SwiftyHawk_Example
+//  SwiftyHawk
 //
 //  Created by Muhamed ALGHZAWI on 08/01/2019.
 //

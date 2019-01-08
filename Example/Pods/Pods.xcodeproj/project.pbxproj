@@ -11,9 +11,9 @@
 		4661D6C66F92346FD0B2E161674DB690 /* Pods-SwiftyHawk_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06FBF3E4BE42C36035E568CF44707EC3 /* Pods-SwiftyHawk_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A9B45999F898EDAB300B739412EDBF4 /* Pods-SwiftyHawk_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E486690FCB6280B83F5B22FCB4C21B21 /* Pods-SwiftyHawk_Example-dummy.m */; };
 		91E09D1073D29063FB798BB19D28FCFB /* SwiftyHawk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D8D35DD1EAE8B95276734357A55CDF /* SwiftyHawk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA05A01821E4EEF7004EE43A /* HawkAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA05A01521E4EEF7004EE43A /* HawkAlgorithm.swift */; };
-		AA05A01921E4EEF7004EE43A /* HawkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA05A01621E4EEF7004EE43A /* HawkClient.swift */; };
-		AA05A01A21E4EEF7004EE43A /* HawkCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA05A01721E4EEF7004EE43A /* HawkCredentials.swift */; };
+		AA05A01D21E4F012004EE43A /* HawkAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA05A01521E4EEF7004EE43A /* HawkAlgorithm.swift */; };
+		AA05A01E21E4F012004EE43A /* HawkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA05A01621E4EEF7004EE43A /* HawkClient.swift */; };
+		AA05A01F21E4F012004EE43A /* HawkCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA05A01721E4EEF7004EE43A /* HawkCredentials.swift */; };
 		AB695DADDCE754C8697D354382749C65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		BE4323ED19416233CDA6615722F39867 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		E1C930BAF05A51621215186C9F84E9E1 /* Pods-SwiftyHawk_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 469F1F381AA1248D1B8F1C64685A56B7 /* Pods-SwiftyHawk_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -331,6 +331,9 @@
 					0023C717428426982077DA6C33A7DFC9 = {
 						LastSwiftMigration = 1010;
 					};
+					7CA5EC0419596545EF499EF8931308C2 = {
+						LastSwiftMigration = 1010;
+					};
 				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -389,6 +392,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA05A01E21E4F012004EE43A /* HawkClient.swift in Sources */,
+				AA05A01F21E4F012004EE43A /* HawkCredentials.swift in Sources */,
+				AA05A01D21E4F012004EE43A /* HawkAlgorithm.swift in Sources */,
 				2002CC42D0B9EDFE173C64323BE66B7B /* SwiftyHawk-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,9 +403,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA05A01921E4EEF7004EE43A /* HawkClient.swift in Sources */,
-				AA05A01A21E4EEF7004EE43A /* HawkCredentials.swift in Sources */,
-				AA05A01821E4EEF7004EE43A /* HawkAlgorithm.swift in Sources */,
 				6A9B45999F898EDAB300B739412EDBF4 /* Pods-SwiftyHawk_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9B9716D00585E96F5EB0941097FA17C5 /* SwiftyHawk.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -621,6 +625,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9B9716D00585E96F5EB0941097FA17C5 /* SwiftyHawk.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -641,6 +646,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
