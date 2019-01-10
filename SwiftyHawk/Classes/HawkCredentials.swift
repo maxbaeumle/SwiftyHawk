@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct HawkCredentials {
-    let key: String
-    let id: String
-    let algorithm: HawkAlgorithm
+public struct HawkCredentials {
+    public let key: String
+    public let id: String
+    public let algorithm: HawkAlgorithm
     
-    public init(key: String, id: String, algorithm: HawkAlgorithm) {
-        self.key = key
+    public init(id: String, key: String, algorithm: HawkAlgorithm) {
         self.id = id
+        self.key = key
         self.algorithm = algorithm
     }
 }

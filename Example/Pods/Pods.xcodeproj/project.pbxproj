@@ -14,6 +14,10 @@
 		AA05A01D21E4F012004EE43A /* HawkAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA05A01521E4EEF7004EE43A /* HawkAlgorithm.swift */; };
 		AA05A01E21E4F012004EE43A /* HawkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA05A01621E4EEF7004EE43A /* HawkClient.swift */; };
 		AA05A01F21E4F012004EE43A /* HawkCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA05A01721E4EEF7004EE43A /* HawkCredentials.swift */; };
+		AA1F324721E629380081D362 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F324621E629380081D362 /* Extensions.swift */; };
+		AA1F324921E629900081D362 /* HawkOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F324821E629900081D362 /* HawkOptions.swift */; };
+		AAD06ED721E735F400D5F3A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD06ED621E735F400D5F3A6 /* Constants.swift */; };
+		AAD06ED921E7396B00D5F3A6 /* HawkCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD06ED821E7396B00D5F3A6 /* HawkCore.swift */; };
 		AB695DADDCE754C8697D354382749C65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		BE4323ED19416233CDA6615722F39867 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		E1C930BAF05A51621215186C9F84E9E1 /* Pods-SwiftyHawk_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 469F1F381AA1248D1B8F1C64685A56B7 /* Pods-SwiftyHawk_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -65,6 +69,10 @@
 		AA05A01521E4EEF7004EE43A /* HawkAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HawkAlgorithm.swift; path = SwiftyHawk/Classes/HawkAlgorithm.swift; sourceTree = "<group>"; };
 		AA05A01621E4EEF7004EE43A /* HawkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HawkClient.swift; path = SwiftyHawk/Classes/HawkClient.swift; sourceTree = "<group>"; };
 		AA05A01721E4EEF7004EE43A /* HawkCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HawkCredentials.swift; path = SwiftyHawk/Classes/HawkCredentials.swift; sourceTree = "<group>"; };
+		AA1F324621E629380081D362 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = SwiftyHawk/Classes/Extensions.swift; sourceTree = "<group>"; };
+		AA1F324821E629900081D362 /* HawkOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HawkOptions.swift; path = SwiftyHawk/Classes/HawkOptions.swift; sourceTree = "<group>"; };
+		AAD06ED621E735F400D5F3A6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = SwiftyHawk/Classes/Constants.swift; sourceTree = "<group>"; };
+		AAD06ED821E7396B00D5F3A6 /* HawkCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HawkCore.swift; path = SwiftyHawk/Classes/HawkCore.swift; sourceTree = "<group>"; };
 		B6D8D35DD1EAE8B95276734357A55CDF /* SwiftyHawk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyHawk-umbrella.h"; sourceTree = "<group>"; };
 		B91C80F8888CFE55DF43D607383A2270 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE1FD8CC65306ACD4D57EFF009F0C0B8 /* SwiftyHawk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyHawk-prefix.pch"; sourceTree = "<group>"; };
@@ -171,6 +179,10 @@
 				AA05A01521E4EEF7004EE43A /* HawkAlgorithm.swift */,
 				AA05A01621E4EEF7004EE43A /* HawkClient.swift */,
 				AA05A01721E4EEF7004EE43A /* HawkCredentials.swift */,
+				AA1F324621E629380081D362 /* Extensions.swift */,
+				AA1F324821E629900081D362 /* HawkOptions.swift */,
+				AAD06ED621E735F400D5F3A6 /* Constants.swift */,
+				AAD06ED821E7396B00D5F3A6 /* HawkCore.swift */,
 				EC433CD0D49C6B0F708475A93207A909 /* Pod */,
 				62890C4786994B52B4339E0B99729423 /* Support Files */,
 			);
@@ -395,7 +407,11 @@
 				AA05A01E21E4F012004EE43A /* HawkClient.swift in Sources */,
 				AA05A01F21E4F012004EE43A /* HawkCredentials.swift in Sources */,
 				AA05A01D21E4F012004EE43A /* HawkAlgorithm.swift in Sources */,
+				AAD06ED921E7396B00D5F3A6 /* HawkCore.swift in Sources */,
+				AA1F324721E629380081D362 /* Extensions.swift in Sources */,
+				AAD06ED721E735F400D5F3A6 /* Constants.swift in Sources */,
 				2002CC42D0B9EDFE173C64323BE66B7B /* SwiftyHawk-dummy.m in Sources */,
+				AA1F324921E629900081D362 /* HawkOptions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
