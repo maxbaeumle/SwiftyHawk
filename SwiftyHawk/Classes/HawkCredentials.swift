@@ -7,9 +7,16 @@
 
 import Foundation
 
+/// The previously-obtained Hawk credentials to use.
 public struct HawkCredentials {
-    public let key: String
+    
+    /// Identifier (User Id, Username..)
     public let id: String
+    
+    /// A.K.A Password.
+    public let key: String
+    
+    /// The algorithm to use to generate the hash and the mac.
     public let algorithm: HawkAlgorithm
     
     public init(id: String, key: String, algorithm: HawkAlgorithm) {

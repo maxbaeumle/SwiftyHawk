@@ -22,9 +22,9 @@ Usage is easy and straight forward, here is the basic usage:
 
 ```swift
 let creds = HawkCredentials(id: "123456", key: "2983d45yun89q", algorithm: .SHA1)
-let client = HawkClient(creds: sha1Credes)
+let client = HawkClient(creds: creds)
 let options = HawkOptions(url: URL(string: "http://www.example.com/resource/q?x=z&y=r"), method: .post)
-let header = client.generateAuthorizationHeader(usingOptions: options) // String header, example: Hawk id=\"123456\", ts=\"1353809207\", nonce=\"Ygvqdz\", ext=\"Bazinga!\", mac=\"qbf1ZPG/r/e06F4ht+T77LXi5vw=\"
+let header = client.generateAuthorizationHeader(usingOptions: options) // example output: Hawk id=\"123456\", ts=\"1353809207\", nonce=\"Ygvqdz\", ext=\"Bazinga!\", mac=\"qbf1ZPG/r/e06F4ht+T77LXi5vw=\"
 ```
 
 

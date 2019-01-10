@@ -1,5 +1,5 @@
 //
-//  CryptoHelpers.swift
+//  Extensions.swift
 //  SwiftyHawk
 //
 //  Created by Muhamed ALGHZAWI on 09/01/2019.
@@ -18,5 +18,11 @@ extension Int {
         get {
             return "\(self)"
         }
+    }
+}
+
+extension URL {
+    func isHttpProtocol() -> Bool {
+        return self.scheme == "http" || self.scheme == "https"
     }
 }
