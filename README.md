@@ -28,7 +28,7 @@ let header = client.generateAuthorizationHeader(usingOptions: options) // exampl
 ```
 
 
-##### Based on the server implementation and your own requirements, you can change the following in the `options` class:
+##### Based on the server implementation and your own requirements, you can change the following properties in the `options` class:
 
 ```swift
 /// Extra information to pass to the server
@@ -67,9 +67,9 @@ Only `generateAuthorizationHeader` is implemented for now, so there's a lot of w
 
 #### How to contribute?
 
-Please open an issue on what's the thing you'll be working on and PR once done!
+There're open issues for the missing parts of Hawk, you can start with that.. PRs are welcome!
 
-Optionally, clone `https://github.com/hueniverse/hawk` for specs (or you can read it from github directly)..
+As a reference, clone `https://github.com/hueniverse/hawk` for specs (or you can read it from github directly).. 
 
 
 ## Author
