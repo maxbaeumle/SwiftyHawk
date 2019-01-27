@@ -69,7 +69,3 @@ Only `generateAuthorizationHeader` is implemented for now, so there's a lot of w
 There're open issues for the missing parts of Hawk, you can start with that.. PRs are welcome!
 
 As a reference, clone `https://github.com/hueniverse/hawk` for specs (or you can read it from github directly)..
-
-#### HungerStation
-<a href="https://itunes.apple.com/sa/app/hungerstation/id596011949?mt=8" style="padding:25px;display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2013-02-02&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a>
-<a href='https://play.google.com/store/apps/details?id=com.hungerstation.android.web&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style="height:60px" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
