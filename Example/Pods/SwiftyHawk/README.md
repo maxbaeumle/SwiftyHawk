@@ -1,5 +1,6 @@
 # SwiftyHawk
 
+[![CI Status](https://img.shields.io/travis/mmgrt/SwiftyHawk.svg?style=flat)](https://travis-ci.org/mmgrt/SwiftyHawk)
 [![Version](https://img.shields.io/cocoapods/v/SwiftyHawk.svg?style=flat)](https://cocoapods.org/pods/SwiftyHawk)
 [![License](https://img.shields.io/cocoapods/l/SwiftyHawk.svg?style=flat)](https://cocoapods.org/pods/SwiftyHawk)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftyHawk.svg?style=flat)](https://cocoapods.org/pods/SwiftyHawk)
@@ -21,9 +22,9 @@ Usage is easy and straight forward, here is the basic usage:
 
 ```swift
 let creds = HawkCredentials(id: "123456", key: "2983d45yun89q", algorithm: .SHA1)
-let client = try! HawkClient(creds: creds)
+let client = HawkClient(creds: creds)
 let options = HawkOptions(url: URL(string: "http://www.example.com/resource/q?x=z&y=r"), method: .post)
-let header = try! client.generateAuthorizationHeader(usingOptions: options) // example output: Hawk id=\"123456\", ts=\"1353809207\", nonce=\"Ygvqdz\", ext=\"Bazinga!\", mac=\"qbf1ZPG/r/e06F4ht+T77LXi5vw=\"
+let header = client.generateAuthorizationHeader(usingOptions: options) // example output: Hawk id=\"123456\", ts=\"1353809207\", nonce=\"Ygvqdz\", ext=\"Bazinga!\", mac=\"qbf1ZPG/r/e06F4ht+T77LXi5vw=\"
 ```
 
 
@@ -68,8 +69,16 @@ Only `generateAuthorizationHeader` is implemented for now, so there's a lot of w
 
 There're open issues for the missing parts of Hawk, you can start with that.. PRs are welcome!
 
-As a reference, clone `https://github.com/hueniverse/hawk` for specs (or you can read it from github directly)..
+As a reference, clone `https://github.com/hueniverse/hawk` for specs (or you can read it from github directly).. 
 
-#### HungerStation
-<a href="https://itunes.apple.com/sa/app/hungerstation/id596011949?mt=8" style="padding:25px;display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2013-02-02&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a>
-<a href='https://play.google.com/store/apps/details?id=com.hungerstation.android.web&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style="height:60px" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+
+## Author
+
+Muhamed ALGHZAWI,
+
+https://twitter.com/mmg_rt
+
+
+## License
+
+TBD

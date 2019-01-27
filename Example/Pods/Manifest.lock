@@ -1,5 +1,5 @@
 PODS:
-  - SwiftyHawk (0.1.0)
+  - SwiftyHawk (0.0.1)
 
 DEPENDENCIES:
   - SwiftyHawk (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwiftyHawk: f527dd25f4bdf7a19be0d841a99962d61a2bf980
+  SwiftyHawk: 17726caae339ada714e1b54183171774dab41253
 
 PODFILE CHECKSUM: 402cfb18d42b4c8225e62d1fdebcb3d99c489b09
 
