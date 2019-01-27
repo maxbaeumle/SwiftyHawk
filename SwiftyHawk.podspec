@@ -24,9 +24,9 @@ Hawk Authentication Implementation for Swift based on the original implementatio
   s.homepage         = 'https://github.com/HungerStation/SwiftyHawk'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'mmgrt' => 'mohamed.alghzawi@hungerstation.com' }
+  s.author           = { 'mmgrt' => 'm.mg@outlook.com' }
   s.source           = { :git => 'https://github.com/HungerStation/SwiftyHawk.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://www.linkedin.com/company/hungerstation-com'
 
   s.ios.deployment_target = '8.0'
 

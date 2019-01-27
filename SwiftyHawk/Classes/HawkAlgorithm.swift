@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CommonCrypto
 
 public enum HawkAlgorithm : String {
     case SHA1
