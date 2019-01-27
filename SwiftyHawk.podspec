@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftyHawk'
-  s.version          = '0.0.2'
+  s.version          = '0.0.4'
   s.summary          = 'Hawk Authentication Implementation for Swift'
   s.swift_version    = '4.2'
 # This description is used to generate tags and improve search results.
